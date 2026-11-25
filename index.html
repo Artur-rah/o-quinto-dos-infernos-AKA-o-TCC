@@ -1,1 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Achados e Perdidos - Júlio Mesquita</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Achados e Perdidos - Colégio Júlio Mesquita</h1>
+    </header>
 
+    <main class="container">
+        <!-- Funcionalidade 1: Formulário de Cadastro -->
+        <section class="formulario">
+            <h2>Registrar Novo Item</h2>
+            <form id="form-item">
+                <label for="nome">O que foi encontrado?</label>
+                <input type="text" id="nome" placeholder="Ex: Blusa de moletom preta" required>
+
+                <label for="data">Data que foi achado:</label>
+                <input type="date" id="data" required>
+
+                <label for="local">Local onde estava:</label>
+                <input type="text" id="local" placeholder="Ex: Quadra de esportes" required>
+
+                <label for="descricao">Descrição/Detalhes:</label>
+                <textarea id="descricao" placeholder="Ex: Tamanho M, com capuz" required></textarea>
+
+                <button type="submit">Salvar Item</button>
+            </form>
+        </section>
+
+        <!-- Funcionalidade 2: Listagem de Itens -->
+        <section class="lista">
+            <h2>Itens Disponíveis na Secretaria</h2>
+            <div id="container-itens">
+                <!-- Os itens vão aparecer aqui via JavaScript -->
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
